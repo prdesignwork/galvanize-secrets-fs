@@ -1,7 +1,7 @@
-// Update with your config settings.
+require('dotenv').config()
 
 module.exports = {
-require('dotenv').config()
+
 
   development: {
     client: 'pg',
@@ -29,7 +29,7 @@ require('dotenv').config()
   production: {
     client: 'pg',
     connection: {
-      database: 'my_db',
+      database: 'DATABASE_URL',
       user:     'username',
       password: 'password'
     },
